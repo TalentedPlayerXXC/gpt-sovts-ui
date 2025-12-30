@@ -12,6 +12,8 @@ const base64ToBlob = (base64 = "", mimeType = '') => {
     return new Blob([ab], { type: mimeType || base64.split(',')[0].split(':')[1].split(';')[0] });
 }
 
+//
+
 export {
     base64ToBlob,
 }

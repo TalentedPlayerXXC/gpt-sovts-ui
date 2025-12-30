@@ -858,6 +858,11 @@
     "@types/babel__core" "^7.20.5"
     react-refresh "^0.17.0"
 
+"@wavesurfer/react@^1.0.11":
+  version "1.0.11"
+  resolved "https://registry.npmmirror.com/@wavesurfer/react/-/react-1.0.11.tgz#658e3540134a1f40668e1fecc0f2d980830b08ec"
+  integrity sha512-DRpaA3MRTKy4Jby12xvoHASa+w31FZtxaqanXcJjfqNqfamkKi8VJfRnz+Uub9LkpdgoAc3g5SuZF75lEcGgzQ==
+
 accepts@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmmirror.com/accepts/-/accepts-2.0.0.tgz#bbcf4ba5075467f3f2131eab3cffc73c2f5d7895"
@@ -2728,10 +2733,10 @@ vite@^6.3.5:
   optionalDependencies:
     fsevents "~2.3.3"
 
-wavesurfer.js@^7.9.5:
-  version "7.9.5"
-  resolved "https://registry.npmmirror.com/wavesurfer.js/-/wavesurfer.js-7.9.5.tgz#e06707cc28e59283556df0ea16bb5503fe3a9243"
-  integrity sha512-ioOG9chuAn0bF2NYYKkZtaxjcQK/hFskLg8ViLYbJHhWPk1N5wWtuqVhqeh2ZWT2SK3t0E8UkD7lLDLuZQQaSA==
+wavesurfer.js@^7.11.0:
+  version "7.11.0"
+  resolved "https://registry.npmmirror.com/wavesurfer.js/-/wavesurfer.js-7.11.0.tgz#989b7d2044db0538abc5a37eb730b9a53bb40903"
+  integrity sha512-LOGdIBIKv/roYuQYClhoqhwbIdQL1GfobLnS2vx0heoLD9lu57OUHWE2DIsCNXBvCsmmbkUvJq9W8bPLPbikGw==
 
 which@^2.0.1:
   version "2.0.2"

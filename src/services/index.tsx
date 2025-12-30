@@ -1,34 +1,20 @@
 // import request from "./request";
 import axios from "axios"
 
-// function getTTS({ ref_audio_path = '', text = '', prompt_text = '' }) {
-function getTTS(data) {
+function getTTS({ ref_audio_path = '', text = '', prompt_text = '' }) {
+// function getTTS(data:any) {
     return axios({
         method: 'post',
         url: '/api/tts',
-        // params: {
-        //     text: '它是我与这世界的连结，见证我所经历的一切。',
-        //     text_lang: 'zh',
-        //     // ref_audio_path: '/Users/mac/Downloads/鸣潮/reference_audios/emotions/漂泊者_男/中文/【开心_happy】开一次空间隧道会耗费你大量算力……黑海岸还需要你维持运转。.wav',
-        //     // ref_audio_path: '',
-        //     // ref_audio_path: ref_audio_path || '',
-        //     prompt_lang: 'zh',
-        //     prompt_text: '开一次空间隧道会耗费你大量算力……黑海岸还需要你维持运转。',
-        //     text_split_method: 'cut5',
-        //     batch_size: 1,
-        //     media_type: 'wav',
-        //     streaming_mode: true,
-        //     speed_factor: 1
-        // },
         data: {
-            ...data,
-            // text,
-            // text_lang: 'zh',
+            // ...data,
+            text,
+            text_lang: 'zh',
             // ref_audio_path: '/Users/mac/Downloads/鸣潮/reference_audios/emotions/漂泊者_男/中文/【开心_happy】开一次空间隧道会耗费你大量算力……黑海岸还需要你维持运转。.wav',
-            // ref_audio_path: ref_audio_path || '',
-            // prompt_lang: 'zh',
-            // prompt_text,
-            // text_split_method: 'cut5', //文本切割方式
+            ref_audio_path: ref_audio_path || '',
+            prompt_lang: 'zh',
+            prompt_text,
+            text_split_method: 'cut5', //文本切割方式
             batch_size: 1,
             media_type: 'wav',
             streaming_mode: true,
@@ -44,7 +30,7 @@ function getTTS(data) {
 function getModels() {
     return axios({
         method: 'get',
-        url: '/v2/models',
+        url: '/api/models',
         // params: {
         //     text: '它是我与这世界的连结，见证我所经历的一切。',
         //     text_lang: 'zh',
@@ -85,9 +71,19 @@ function getFileLink({ fileName = '', isBase64 = false, file = '' }) {
     })
 }
 
+// 获取文件列表
+
+function getEmotionList() {
+    return axios({
+        method: 'get',
+        url: '/file/getEmotionList'
+    })
+}
+
 export {
     getTTS,
     getFileLink,
     getModels,
     getSpks,
+    getEmotionList,
 }   
