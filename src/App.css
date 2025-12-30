@@ -1,0 +1,43 @@
+:root {
+  --font-color: #d3d3dd;
+}
+
+#root {
+  width: 100%;
+  min-width: 1280px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 1280px;
+  /* justify-content: center; */
+  /* min-height: 100vh; */
+}
+
+/* .formstyle .ant-form-item-label>label {
+  color: var(--font-color);
+}
+
+.model-select {
+  display: flex;
+  flex-direction: row;
+}
+.textArea {
+  min-height: 400px;
+  font-size: 16px;
+  min-width: 400px;
+} */
+
+/* .formstyle {
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  box-shadow:  0px 3px 6px 5px #ede9e9b6;
+  min-width: 1200px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #968e8b;
+  margin-bottom: 20px;
+} */
