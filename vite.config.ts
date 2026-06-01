@@ -24,7 +24,7 @@ export default defineConfig({
       //   rewrite: (path) => path.replace(/^\/v2/, '') // 路径重写（可选）
       // },
       '/file': {      // 代理路径前缀
-        target: 'http://192.168.50.251:3001', // 后端接口地址
+        target: 'http://192.168.50.251:3000', // 后端接口地址
         changeOrigin: true,              // 修改请求源为后端地址
         rewrite: (path) => path.replace(/^\/file/, '') // 路径重写（可选）
       },
@@ -33,6 +33,12 @@ export default defineConfig({
       //   changeOrigin: true,              // 修改请求源为后端地址
       //   rewrite: (path) => path.replace(/^\/file/, '') // 路径重写（可选）
       // },
+      '/qwen': {
+        target: 'http://192.168.50.251:8000', // 后端接口地址
+        changeOrigin: true,              // 修改请求源为后端地址
+        rewrite: (path) => path.replace(/^\/qwen/, '') // 路径重写（可选）
+      },
     }
-  }
+  },
+  base: './', // 设置基础路径为当前目录
 })

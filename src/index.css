@@ -1,6 +1,7 @@
 
 :root {
-    --background-color: #000a23;
+    /* --background-color: #000a23; */
+    --background-color: #F5F1E8;
 }
 
 body {
@@ -11,6 +12,7 @@ html, body, #root {
     /* height: 100%; */
     margin: 0;
     background-color: var(--background-color);
+    color: #4A4A48;
 
 }
 #root {

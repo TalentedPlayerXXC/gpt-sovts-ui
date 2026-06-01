@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import { Avatar } from 'antd';
-import { UserOutlined } from '@ant-design/icons';
+// import { UserOutlined } from '@ant-design/icons';
 import LogoWhite from '../assets/fangxiu_Logo_white.png'
 import LogoBlack from '../assets/fangxiu_Logo_black.png'
 // import LogoBlack from '../assets/logo_black.png'
 // import logoImg from '../assets/fangxiu_Logo_black.png';
-
+interface LoginCompProps {
+    theme?: 'light' | 'dark';
+    user?: object;
+}
 import './index.css'
-function LoginComp(props: any) {
-    const { theme, user='w' } = props;
+function LoginComp(props: LoginCompProps) {
+    const { theme, user={} } = props;
     return (
         <div className='loginHead'>
             <div className='logo'>
